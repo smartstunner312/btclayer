@@ -43,4 +43,5 @@ The Gains bot is currently not responding to any trades and is not taking any tr
      ```bash
      python bot.py --verbose
      ```
-
+**NOTE**:
+- extra **gains_and_gmxv1.csv** file is also provided. this file has huge amount of gains traders.
