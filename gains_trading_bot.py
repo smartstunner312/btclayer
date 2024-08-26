@@ -2845,7 +2845,7 @@ dots = 0
 # Initialize the Binance client instance
 while True:
     try:
-        client = Client(binance_api, binance_secret)
+        client = Client(binance_api, binance_secret, testnet=True)  #testnet= True is added if running in testnet account otherwise it will be removed.
         print("\nConnected")
         break
     except:
