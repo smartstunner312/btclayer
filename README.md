@@ -22,10 +22,10 @@ Using the Binance API, the bot mirrors the actions of the top traders in real-ti
 ### 5. **Generating Output Files**
 After execution, the bot generates the following files in the same folder where the bot file and traders sheet are located:
 - **GAINS_log.txt**: Logs detailing the bot’s activities, including API calls, decisions made, and any issues encountered.
-- **GAINS_stop_signal.txt**: A file indicating when the bot has decided to stop trading, usually due to risk parameters being met or market conditions not being favorable.
-- **GAINS_trading_data_df.csv**: A CSV file storing the trading data and decisions made by the bot, useful for backtesting and analysis.
+- **GAINS_stop_signal.txt**: A file indicating when the bot has decided to stop trading, by inputting 'STOP' in this file bot stops taking trades.
+- **GAINS_trading_data_df.csv**: A CSV file for storing the trades done by GAINS bot.
 
-## Known Issues
+## PROBLEM ARISING
 
 ### 1. **Bot Not Taking Trades**
 The Gains bot is currently not responding to any trades and is not taking any trades. Additionally, no errors are being logged in the log files, making it difficult to diagnose the underlying issue.
@@ -44,7 +44,3 @@ The Gains bot is currently not responding to any trades and is not taking any tr
      python bot.py --verbose
      ```
 
-3. **Analyzing Output**:
-   - **GAINS_log.txt**: This file contains all the updates bot is doing like taking trades, action performing, error etc.
-   - **GAINS_stop_signal.txt**: this file is used to stop the bot from taking new trades using 'STOP' input.
-   - **GAINS_trading_data_df.csv**: this file contains all thr happened trades in GAINS.
